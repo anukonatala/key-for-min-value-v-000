@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
         min_value = hash
       end
     end
-    min_value
+    
 end
 
 puts "#{key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})}"
