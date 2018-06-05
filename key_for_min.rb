@@ -10,8 +10,9 @@ def key_for_min_value(name_hash)
         min_value = hash
       end
     end
-    name_hash.select{|name, hash| hash ==  min_value}.keys[0]
-    puts "returnin ==== #{name_hash.key(min_value)}"
+    #name_hash.select{|name, hash| hash ==  min_value}.keys[0]
+    name_hash.key(min_value)
+    
 end
 
 puts "#{key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})}"
