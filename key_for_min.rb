@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
         min_value = hash
       end
     end
-    clients.select{|key, hash| hash["client_id"] == "2180" }.key
+    name_hash.select{|name, hash| hash == min_value
 end
 
 puts "#{key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})}"
