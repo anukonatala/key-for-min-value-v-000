@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
         min_value = hash
       end
     end
-    name_hash.select{|name, hash| hash == min_value
+    name_hash.select{|name, hash| hash ==  min_value}.keys
 end
 
 puts "#{key_for_min_value({:blake => 500, :ashley => 2, :adam => 1})}"
