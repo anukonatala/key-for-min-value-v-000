@@ -4,7 +4,7 @@
 def key_for_min_value(name_hash)
     
     min_key, min_value = name_hash.first
-    puts "valu === #{min_value}"
+    
     name_hash.each do |name, hash|
       if min_value > hash
         min_value = hash
